@@ -4,7 +4,7 @@ import connectMongoDB from "./models/db.js";
 import bodyParser from "body-parser";
 import cors from "cors"
 import AuthRouter from "./routes/AuthRouter.js"
-import TaskRouter from "./routes/TaskRouter.js" // Add this line
+import TaskRouter from "./routes/TaskRouter.js" 
 
 const app = express();
 dotenv.config()
