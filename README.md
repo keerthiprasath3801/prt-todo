@@ -16,6 +16,14 @@ npm run dev - to run backend.
    - JWT_SECRET: Secret key for JWT.
 5. Run the server:
    npm run dev
+## Setup
+1. Clone the repo:
+   git clone https://github.com/keerthiprasath3801/prt-todo.git
+2. Go to the root folder:
+   Install dependencies:
+   npm install
+3.Go to cd backend  : to run backend
+   npm run dev
 ## Packages Used
 bcrypt For password hashing.
 express For setting up the server.
