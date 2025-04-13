@@ -4,10 +4,13 @@ This backend handles authentication and task management.
 
 1. Clone the repo:   
 git clone https://github.com/keerthiprasath3801/prt-todo.git
-2. Go to the backend folder:
- cd backend
-3. Install dependencies:
-   npm install
+2. Go to the root folder:
+Install dependencies:
+ npm init -y
+ npm install express cors bcrypt joi body-parser jsonwebtoken mongoose
+ npm install nodemon -D
+3.Go to cd backend :
+npm run dev - to run backend
 4. Create a .env file with these variables:
    - MONGO_URI: MongoDB connection URI.
    - JWT_SECRET: Secret key for JWT.
