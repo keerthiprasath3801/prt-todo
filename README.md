@@ -61,6 +61,12 @@ react-dom: React's package for working with the DOM.
 react-router-dom: For routing in the application.
 react-toastify: For displaying toast notifications.
 
+#Folders & Files Description
+1. SignUpPage – Handles user registration functionality.
+2. LoginPage – Manages user login process.
+3. HomePage – Displays and manages user tasks after successful login.
+4. utils.js – Contains utility functions, such as showing toast notifications.
+
 ## Development Tools
 vite: A fast and lightweight build tool.
 
