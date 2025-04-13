@@ -63,7 +63,7 @@ const Signup = () => {
                             name="name"
                             value={signupInfo.name}
                             onChange={handleChange}
-                            placeholder="John Doe"
+                            placeholder="Keerthiprasath"
                             required
                         />
                     </div>
