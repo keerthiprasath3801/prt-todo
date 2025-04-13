@@ -1,4 +1,3 @@
-
 .auth-container {
     display: flex;
     justify-content: center;
@@ -7,8 +6,6 @@
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     padding: 20px;
   }
-  
-
   .auth-form {
     background: white;
     padding: 2.5rem;
@@ -18,12 +15,9 @@
     max-width: 420px;
     transition: all 0.3s ease;
   }
-  
   .auth-form:hover {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
   }
-  
- 
   .auth-form h2 {
     color: #2d3748;
     text-align: center;
@@ -31,13 +25,10 @@
     font-size: 1.8rem;
     font-weight: 600;
   }
-  
-
   .form-group {
     margin-bottom: 1.5rem;
     position: relative;
   }
-  
   .form-group label {
     display: block;
     margin-bottom: 0.5rem;
@@ -45,8 +36,6 @@
     font-size: 0.95rem;
     font-weight: 500;
   }
-  
-  
   .form-group input {
     width: 100%;
     padding: 0.8rem 1rem;
@@ -56,20 +45,16 @@
     transition: all 0.3s ease;
     background-color: #f8fafc;
   }
-  
   .form-group input:focus {
     outline: none;
     border-color: #667eea;
     box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
     background-color: white;
   }
-  
   .form-group input::placeholder {
     color: #a0aec0;
     font-size: 0.9rem;
   }
-  
-  
   .auth-button {
     width: 100%;
     padding: 0.9rem;
@@ -83,17 +68,13 @@
     transition: all 0.3s ease;
     margin-top: 0.5rem;
   }
-  
   .auth-button:hover {
     background: linear-gradient(to right, #5a6fd1, #5d3a7a);
     transform: translateY(-2px);
-  }
-  
+  } 
   .auth-button:active {
     transform: translateY(0);
   }
-  
-
   .auth-footer {
     text-align: center;
     margin-top: 1.5rem;
@@ -126,32 +107,20 @@
     width: 0%;
     transition: width 0.3s ease, background 0.3s ease;
   }
-  
- 
+   
   .Toastify__toast {
-    border-radius: 8px !important;
-    font-family: inherit !important;
+    border-radius: 8px ;
+    font-family: inherit; 
   }
   
   .Toastify__toast--success {
-    background: #48bb78 !important;
+    background: #48bb78 
   }
   
   .Toastify__toast--error {
-    background: #f56565 !important;
+    background: #f56565
   }
   
-
-  @media (max-width: 480px) {
-    .auth-form {
-      padding: 1.8rem;
-    }
-    
-    .auth-form h2 {
-      font-size: 1.5rem;
-    }
-  }
-
   .home-container {
     display: flex;
     flex-direction: column;
@@ -162,7 +131,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #282c34;
+    background-color: purple;
     color: white;
     padding: 15px 30px;
 }
@@ -171,6 +140,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 2px;
+    color: white;
 }
 
 .user-actions {
@@ -179,9 +149,7 @@
     gap: 15px;
 }
 
-.username {
-    font-weight: 500;
-}
+
 
 .logout-btn {
     background-color: #ff4d4f;
@@ -197,29 +165,18 @@
     background-color: #e04343;
 }
 
-/* General Styles */
+
 .home-container {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  color: #333;
-}
-
-/* Header Styles */
-.home-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 0;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 30px;
 }
 
 .logo {
   font-size: 24px;
   font-weight: bold;
-  color: #4a6baf;
+  color: azure;
 }
 
 .user-actions {
@@ -230,7 +187,7 @@
 
 .username {
   font-weight: 500;
-  color: #555;
+  color: azure;
 }
 
 .logout-btn {
@@ -247,7 +204,6 @@
   background-color: #d32f2f;
 }
 
-/* Task Manager Layout */
 .task-manager {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -268,7 +224,6 @@
   border-bottom: 1px solid #eee;
 }
 
-/* Task Form Styles */
 .task-form {
   display: flex;
   flex-direction: column;
@@ -336,7 +291,6 @@
   background-color: #d32f2f;
 }
 
-/* Task List Styles */
 .task-list {
   display: grid;
   gap: 15px;
@@ -418,7 +372,6 @@
   background-color: #f44336;
   color: white;
 }
-
 .no-tasks {
   text-align: center;
   color: #888;

@@ -11,8 +11,6 @@ export const ensureAuthenticated = (req, res, next) => {
     const token = authHeader.split(' ')[1]; 
 
     try {
-        console.log("JWT_SECRET from .env:", process.env.JWT_SECRET);
-
         const decoded = jwt.verify(token, process.env.JWT_SECRET);
         req.user = decoded;
         next();
