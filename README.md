@@ -8,9 +8,9 @@ git clone https://github.com/keerthiprasath3801/prt-todo.git
 Install dependencies:
  npm init -y
  npm install express cors bcrypt joi body-parser jsonwebtoken mongoose
- npm install nodemon -D
+ npm install nodemon -D.
 3.Go to cd backend :
-npm run dev - to run backend
+npm run dev - to run backend.
 4. Create a .env file with these variables:
    - MONGO_URI: MongoDB connection URI.
    - JWT_SECRET: Secret key for JWT.
