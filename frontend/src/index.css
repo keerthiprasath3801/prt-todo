@@ -197,34 +197,231 @@
     background-color: #e04343;
 }
 
-.product-list {
-    padding: 20px 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 20px;
+/* General Styles */
+.home-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #333;
 }
 
-.product-card {
-    background: white;
-    padding: 15px 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between;
-    font-weight: 500;
+/* Header Styles */
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 30px;
 }
 
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4a6baf;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.username {
+  font-weight: 500;
+  color: #555;
+}
+
+.logout-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Task Manager Layout */
+.task-manager {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+}
+
+.task-form-section, .task-list-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-form-section h2, .task-list-section h2 {
+  margin-top: 0;
+  color: #4a6baf;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Task Form Styles */
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: #555;
+}
+
+.form-group input, .form-group textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.form-group textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.checkbox-group {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox-group input {
+  width: auto;
+}
+
+.submit-btn, .cancel-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.submit-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: #388E3C;
+}
+
+.cancel-btn {
+  background-color: #f44336;
+  color: white;
+  margin-left: 10px;
+}
+
+.cancel-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Task List Styles */
+.task-list {
+  display: grid;
+  gap: 15px;
+}
+
+.task-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.3s;
+}
+
+.task-card.completed {
+  background-color: #f5f5f5;
+  border-left: 4px solid #4CAF50;
+}
+
+.task-card.completed h3 {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.task-content {
+  flex: 1;
+}
+
+.task-content h3 {
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.task-content p {
+  margin: 0 0 10px 0;
+  color: #666;
+}
+
+.task-meta {
+  display: flex;
+  gap: 15px;
+  font-size: 0.9em;
+  color: #888;
+}
+
+.task-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 120px;
+}
+
+.status-btn, .edit-btn, .delete-btn {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s;
+}
+
+.status-btn.complete {
+  background-color: #ff9800;
+  color: white;
+}
+
+.status-btn.incomplete {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.edit-btn {
+  background-color: #2196F3;
+  color: white;
+}
 
 .delete-btn {
-    background-color: #ff5c5c;
-    border: none;
-    color: white;
-    padding: 6px 12px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background 0.3s ease;
+  background-color: #f44336;
+  color: white;
 }
 
-.delete-btn:hover {
-    background-color: #e04848;
+.no-tasks {
+  text-align: center;
+  color: #888;
+  padding: 20px;
 }
+
