@@ -21,6 +21,26 @@ mongoose: For MongoDB interaction.
 dotenv : For environment variables.
 joi: For data validation.
 
+#Folder Structure
+#controllers
+authController.js
+taskController.js
+
+#middlewares
+auth.js
+authValidation.js
+
+#models
+db.js
+task.js
+user.js
+
+#routes
+authRouter.js
+taskRouter.js
+
+server.js
+package.json
 
 # Frontend
 
